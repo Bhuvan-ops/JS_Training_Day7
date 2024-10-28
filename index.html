@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="clock" id="clock1"> 
+        <p id="name">The Current Time is:</p>
+        <p id="result"></p>
+    </div>
+    <button id="toggleButton">Change Time-Format</button>
+    <div class="box">
+        <fieldset>
+            <legend>Choose Font Style : </legend>
+            <label>
+                <input type="radio" name="textOption" value="Text 1" 
+                       onclick="changeTextStyle('Lobster');"> 
+                       Lobster
+            </label><br>
+            <label>
+                <input type="radio" name="textOption" value="Text 2" 
+                       onclick="changeTextStyle('Impact');"> 
+                Impact
+            </label><br>
+            <label>
+                <input type="radio" name="textOption" value="Text 3" 
+                       onclick="changeTextStyle('Pacifico');"> 
+                       Pacifico
+            </label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose Background Color : </legend>
+            <label>
+                <input type="radio" name="colorOption" value="#ffffff" 
+                       onclick="changeBackgroundColor('#faf689');"> 
+                Light Yellow
+            </label><br>
+            <label>
+                <input type="radio" name="colorOption" value="#ffcccb" 
+                       onclick="changeBackgroundColor('#ffcccb');"> 
+                Light Red
+            </label><br>
+            <label>
+                <input type="radio" name="colorOption" value="#add8e6" 
+                       onclick="changeBackgroundColor('#add8e6');"> 
+                Light Blue
+            </label><br>
+            <label>
+                <input type="radio" name="colorOption" value="#90ee90" 
+                       onclick="changeBackgroundColor('#90ee90');"> 
+                Light Green
+            </label><br>
+        </fieldset>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
